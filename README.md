@@ -9,15 +9,19 @@
 ## 2.下载依赖
 
 ```javascript
+// 项目需要跑在 8000 和 8001 端口
 // 推荐包管理器 yarn，因为 low-code-engine demo 项目中有问题 pnpm 不支持
 // 有 yarn.lock 锁文件，分别两个项目 yarn
 // 需要 node >= 18.18.0
 
 // ../low-code-admin
-yarn
+yarn && yarn dev
 
 // ../low-code-engine
-yarn
+yarn && yarn start
+
+// 启动成功后打开 8000 端口的 low-code-admin 项目
+// 第一次打开 低代码平台会有点慢需要等待 3s 左右
 ```
 
 ## 3. 项目展示
