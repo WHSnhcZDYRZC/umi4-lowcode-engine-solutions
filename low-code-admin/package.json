@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "author": "hy <84385725+WHSnhcZDYRZC@users.noreply.github.com>",
+  "scripts": {
+    "dev": "max dev",
+    "build": "max build",
+    "format": "prettier --cache --write .",
+    "prepare": "husky",
+    "postinstall": "max setup",
+    "setup": "max setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@alilc/lowcode-datasource-fetch-handler": "^1.1.4",
+    "@alilc/lowcode-plugin-inject": "^1.2.3",
+    "@alilc/lowcode-react-renderer": "1.3.2",
+    "@alilc/lowcode-utils": "^1.3.2",
+    "@ant-design/icons": "^5.0.1",
+    "@ant-design/pro-components": "^2.4.4",
+    "@umijs/max": "^4.3.6",
+    "antd": "^5.4.0",
+    "lodash": "4.6.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "husky": "^9",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.7",
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "prettier-plugin-packagejson": "^2.4.3",
+    "typescript": "^5.0.3"
+  }
+}
