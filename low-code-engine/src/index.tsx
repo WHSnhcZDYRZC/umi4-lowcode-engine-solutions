@@ -1,4 +1,5 @@
-import { init, plugins } from '@alilc/lowcode-engine';
+import './public-path';
+import { init, plugins, destroy } from '@alilc/lowcode-engine';
 import { createFetchHandler } from '@alilc/lowcode-datasource-fetch-handler';
 import EditorInitPlugin from './plugins/plugin-editor-init';
 import UndoRedoPlugin from '@alilc/lowcode-plugin-undo-redo';
@@ -105,7 +106,13 @@ async function registerPlugins() {
 
 const Main = () => {
   const _init = async () => {
-    await registerPlugins();
+    if (!plugins.has('LowcodePluginInjectAlt')) {
+      await registerPlugins();
+    } else {
+      // 容错方案，因为重复注册 plugins.delete 没办法解决
+      // 如果项目要求比较高，可以 加入 loading 效果解决闪动问题
+      window.location.reload();
+    }
 
     init(document.getElementById('hy-low-code-container')!, {
       locale: 'zh-CN',
@@ -121,7 +128,7 @@ const Main = () => {
         'https://alifd.alicdn.com/npm/@alilc/lowcode-react-simulator-renderer@latest/dist/js/react-simulator-renderer.js',
       ],
     });
-  };
+  }
 
   useEffect(() => {
     _init();
