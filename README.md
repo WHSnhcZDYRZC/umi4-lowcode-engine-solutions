@@ -11,6 +11,7 @@
 ```javascript
 // 推荐包管理器 yarn，因为 low-code-engine demo 项目中有问题 pnpm 不支持
 // 有 yarn.lock 锁文件，分别两个项目 yarn
+// 需要 node >= 18.18.0
 
 // ../low-code-admin
 yarn
