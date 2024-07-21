@@ -6,7 +6,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "start": "build-scripts start --disable-reload --port 8001",
+    "dev": "build-scripts start --disable-reload --port 8001",
     "build": "build-scripts build",
     "prepublishOnly": "npm run build",
     "pub": "node ./scripts/watchdog.js && npm pub"
