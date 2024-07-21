@@ -73,23 +73,6 @@
         "https://alifd.alicdn.com/npm/@alifd/fusion-ui@2.0.2/build/lowcode/view.js",
         "https://alifd.alicdn.com/npm/@alifd/fusion-ui@2.0.2/build/lowcode/view.css"
       ]
-    },
-    {
-      "package": "low-code-material",
-      "version": "0.1.0",
-      "library": "BizComps",
-      "urls": [
-        "http://192.168.200.130/child/low-code-material/view.js"
-      ],
-      "editUrls": [
-        "http://192.168.200.130/child/low-code-material/view.js"
-      ],
-      "advancedUrls": {
-        "default": [
-          "http://192.168.200.130/child/low-code-material/view.js"
-        ]
-      },
-      "advancedEditUrls": {}
     }
   ],
   "components": [
@@ -124,22 +107,6 @@
       "urls": {
         "default": "https://alifd.alicdn.com/npm/@alifd/fusion-ui@2.0.2/build/lowcode/meta.js",
         "design": "https://alifd.alicdn.com/npm/@alifd/fusion-ui@2.0.2/build/lowcode/meta.design.js"
-      }
-    },
-    {
-      "exportName": "LowCodeMaterialMeta",
-      "npm": {
-        "package": "low-code-material",
-        "version": "0.1.0"
-      },
-      "url": "http://192.168.200.130/child/low-code-material/meta.js",
-      "urls": {
-        "default": "http://192.168.200.130/child/low-code-material/meta.js"
-      },
-      "advancedUrls": {
-        "default": [
-          "http://192.168.200.130/child/low-code-material/meta.js"
-        ]
       }
     }
   ],
