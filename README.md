@@ -2,7 +2,7 @@
 
 ##### 前言：
 
-1. 本文解决了 umi4 利用 qiankun 架构 接入 lowcode-engine 低代码引擎的一系列问题，包含但不限于 lowcode-engine issues ( [1796](https://github.com/alibaba/lowcode-engine/issues/1796 '1796') 、[1455](https://github.com/alibaba/lowcode-engine/issues/1455 '1455')、[1014](https://github.com/alibaba/lowcode-engine/issues/1014 '1014')、[423](https://github.com/alibaba/lowcode-engine/issues/423 '423') 、[1014](https://github.com/alibaba/lowcode-engine/issues/1014 '1014') ...);
+1. 本文解决了 umi4 利用 qiankun 架构 接入 lowcode-engine 低代码引擎的一系列问题，包含但不限于 lowcode-engine issues ( [3070](https://github.com/alibaba/lowcode-engine/issues/3070 '3070') 、[1796](https://github.com/alibaba/lowcode-engine/issues/1796 '1796') 、[1455](https://github.com/alibaba/lowcode-engine/issues/1455 '1455')、[1014](https://github.com/alibaba/lowcode-engine/issues/1014 '1014')、[423](https://github.com/alibaba/lowcode-engine/issues/423 '423')  ...);
 2. 完善了 lowcode-engine 文档中自定义低代码组件不需要发布到 npm 的方案;
 3. 实现了 umi4 接入 lowcode-engine qiankun 部署的方案;
 4. 本文需要知识 node、qiankun、umi4、lowcode-engine、webpack4 && 5、nginx、docker、linux，如果不太熟悉也没关系只是过程中会有些疑问，但是不会影响最终实现;
